@@ -9633,10 +9633,18 @@ hr.light {
 
 .blob-white {
   background-image: url("../img/alumni-night/blob.png");
-  background-position: top;
-  background-repeat: repeat-y;
-  background-attachment: scroll;
-  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .blob-white {
+    background-position: top;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: contain;
+  }
 }
 
 .border-right-alumni {
