@@ -1,0 +1,143 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+// Typography
+.text-white-75 {
+  color: fade-out($white, .25);
+}
+.text-alumni-primary{
+  color: $alumni-primary;
+}
+.text-alumni-secondary{
+  color: $alumni-secondary;
+}
+
+
+// Custom horizontal rules
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+// Button restyling
+.btn {
+  font-family: $font-family-sans-serif;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+// Page section padding
+.page-section {
+  padding: 8rem 0;
+}
+
+#my-form{
+  input{
+    padding:1.25rem 2rem;
+    height: auto;
+  }
+  button{
+    padding:1.25rem 2rem;
+
+  }
+}
+
+//alumni section
+
+.bg-alumni-primary{
+  color: $alumni-secondary;
+  background-color: $alumni-primary;
+}
+.bg-alumni-secondary{
+  color: $alumni-primary;
+  background-color: $alumni-secondary;
+}
+
+.border-left-alumni{
+  border-left: none;
+  @include media-breakpoint-up(lg){
+    border-left: .5rem solid $alumni-primary;
+
+  }
+}
+
+.blob-white{
+  background-image: url('../img/alumni-night/blob.png');
+  background-position: top;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-size: contain;
+}
+.border-right-alumni{
+  border-right: none;
+  @include media-breakpoint-up(lg){
+    border-right: .5rem solid $alumni-primary;
+
+  }
+}
+.events-card{
+
+  .card{
+    .overlay{
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($color: #042a33, $alpha: 0.4);
+    }
+    overflow: hidden;
+    height: 20rem;
+    border: none;
+    color:$alumni-secondary;
+    &:nth-child(1){
+      background-image: url('../img/alumni-night/events/presentation.jpg');
+      }
+    &:nth-child(2){
+      background-image: url('../img/alumni-night/events/sharing.jpg');
+
+    }
+    &:nth-child(3){
+      background-image: url('../img/alumni-night/events/dinner.jpg');
+
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;;
+
+    .text-overlay{
+      position: absolute;
+      bottom:0;
+      left:0;
+      padding:2em;
+      width: 100%;
+      font-size: 50%;
+      color:white;
+      @include media-breakpoint-up(lg){
+        font-size: 100%;
+
+  }
+    }
+
+  }
+
+}
