@@ -9647,6 +9647,19 @@ hr.light {
   }
 }
 
+#event-detail {
+  width: 500px;
+}
+
+#event-detail td {
+  font-size: large;
+  font-weight: bold;
+}
+
+#event-detail td:nth-child(1) {
+  color: #D1BF54;
+}
+
 .border-right-alumni {
   border-right: none;
 }
@@ -9697,13 +9710,16 @@ hr.light {
   left: 0;
   padding: 2em;
   width: 100%;
-  font-size: 50%;
   color: white;
 }
 
+.events-card .card .text-overlay h3 {
+  font-size: 90%;
+}
+
 @media (min-width: 992px) {
-  .events-card .card .text-overlay {
-    font-size: 100%;
+  .events-card .card .text-overlay h3 {
+    font-size: 28px;
   }
 }
 

@@ -91,6 +91,18 @@ hr.light {
 
   }
 }
+#event-detail{
+  width:500px;
+  td{
+    font-size: large;
+    font-weight: bold;
+    &:nth-child(1){
+      color:$alumni-primary
+      
+      }
+  }
+  
+}
 .border-right-alumni{
   border-right: none;
   @include media-breakpoint-up(lg){
@@ -137,12 +149,14 @@ hr.light {
       left:0;
       padding:2em;
       width: 100%;
-      font-size: 50%;
       color:white;
-      @include media-breakpoint-up(lg){
-        font-size: 100%;
-
-  }
+      h3{
+        font-size: 90%;
+        @include media-breakpoint-up(lg){
+          font-size: 28px;
+        }
+      }
+      
     }
 
   }
