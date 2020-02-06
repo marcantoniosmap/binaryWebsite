@@ -9648,7 +9648,7 @@ hr.light {
 }
 
 #event-detail {
-  width: 500px;
+  width: 100%;
 }
 
 #event-detail td {
@@ -9953,13 +9953,4 @@ header.masthead h1 {
 
 #events .container-fluid .events-box:hover .events-box-caption {
   opacity: 1;
-}
-
-#about #wedo {
-  background-image: url("../img/wedo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  min-height: 786px;
 }
