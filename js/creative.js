@@ -20,6 +20,41 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  $(document).ready(function(){
+    $('.events-primary').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [ {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        }]
+    });
+    $('.events-secondary').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 3
+          }
+      }]
+  });
+});
+
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
