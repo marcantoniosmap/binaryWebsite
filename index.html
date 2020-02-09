@@ -25,6 +25,9 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
   <!-- <link rel="stylesheet" href="css/slick.css"> -->
 
 </head>
@@ -35,7 +38,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo/BINARY Logo Flat.png" width=40 alt="LOGO">
+        <img src="img/logo/binary.svg" width=40 onerror="this.onerror=null; this.src='img/logo/binarylogo.png'">
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <div id="nav-icon">
@@ -104,17 +107,45 @@
           <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">More about us</a> -->
         </div>
       </div>
-      <div class="row pt-3">
-        <div class="col-lg-6">
-          <img src="img/about-us.png" alt="" class="img-fluid">
+      
+
+      <h2 class="text-center text-white mt-0">Upcoming events</h2>
+      <section class="upcoming-events slider">
+        
+        <div class="slide px-3">
+          <div class="card" >
+            <img class="card-img-top" src="img/logo/alumninight.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div><div class="slide px-3">
+          <div class="card" >
+            <img class="card-img-top" src="img/logo/alumninight.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6">
-          <div class="text-white">
-            <h4>We get it, we're bunch of nerds</h4></div>
+        <div class="slide px-3">
+          <div class="card" >
+            <img class="card-img-top" src="img/logo/alumninight.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </div>
+      
+
+        
+      </section>
     </div>
-     
   </section>
 
   <!-- Services Section -->
@@ -162,7 +193,7 @@
     <div class="container-fluid p-0">
       <section class="events-primary slider">
         <a class="events-box" href="alumni-night.html">
-          <div class="slide"><img src="img/logo/alumninight.png"></div>
+          <div class="slide"><img src="img/logo/alumninight.jpg"></div>
           <div class="events-box-caption">
             <div class="project-category text-white-50">
               13 March 2020
@@ -173,7 +204,7 @@
           </div>
         </a>
         <a class="events-box" href="">
-          <div class="slide"><img src="img/logo/bmp.png"></div>
+          <div class="slide"><img src="img/logo/blc.jpg"></div>
           <div class="events-box-caption">
             <div class="project-category text-white-50">
               23 November 2020
@@ -184,7 +215,7 @@
           </div>
         </a>
         <a class="events-box" href="">
-          <div class="slide"><img src="img/logo/hackathon.png"></div>
+          <div class="slide"><img src="img/logo/hackathon.jpg"></div>
           <div class="events-box-caption">
             <div class="project-category text-white-50">
               3 February 2021
@@ -195,7 +226,7 @@
           </div>
         </a>
         <a class="events-box" href="">
-          <div class="slide"><img src="img/logo/competitiveprogramming.png"></div>
+          <div class="slide"><img src="img/logo/competitive.jpg"></div>
           <div class="events-box-caption">
             <div class="project-category text-white-50">
               5 October 2020
@@ -208,12 +239,12 @@
         
       </section>
       <section class="events-secondary slider">
-        <div class="slide"><img src="img/logo/seminary.png"></div>
-        <div class="slide"><img src="img/logo/robogals.png"></div>
-        <div class="slide"><img src="img/logo/phootsal.png"></div>
-        <div class="slide"><img src="img/logo/ctf.png"></div>
-        <div class="slide"><img src="img/logo/binarystudysession.png"></div>
-        <div class="slide"><img src="img/logo/wombat.png"></div>
+        <div class="slide"><img src="img/logo/seminary.jpg"></div>
+        <div class="slide"><img src="img/logo/robogals.jpg"></div>
+        <div class="slide"><img src="img/logo/phootsal.jpg"></div>
+        <div class="slide"><img src="img/logo/ctf.jpg"></div>
+        <div class="slide"><img src="img/logo/binarystudysessio.jpg"></div>
+        <div class="slide"><img src="img/logo/wombat.jpg"></div>
       </section>
     </div>
   </section>
@@ -226,7 +257,7 @@
       <h2 class="mb-4">Partner with us!</h2>
       <form class="form-inline d-flex" id="my-form">
         <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="name@example.com">
-        <button id="my-form-button" type="submit" value="Send" class="btn btn-primary p-auto mx-auto">Subscribe</button>
+        <button id="my-form-button" type="submit" value="Send" class="btn btn-primary p-auto mx-auto">SUBMIT</button>
         <p></p>
       </form>
     </div>
@@ -243,13 +274,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+        <div class="col-md-4 ml-auto text-center mb-5 mb-lg-0">
           <a target="#"href="https://www.instagram.com/binaryclub.binus/">
             <i class="fab fa-instagram fa-3x mb-3 text-muted"></i>
             <div>binaryclub.binus</div>
           </a>
         </div>
-        <div class="col-lg-4 mr-auto text-center">
+        <div class="col-md-4 mr-auto text-center">
           <a href="mailto:binaryclub.binus@gmail.com">
             <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
             <!-- Make sure to change the email address in anchor text AND the link below! -->

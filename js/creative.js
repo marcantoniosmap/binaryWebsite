@@ -3,6 +3,7 @@
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    $('#nav-icon').removeClass('open');
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -18,6 +19,7 @@
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
+    $('#nav-icon').removeClass('open');
   });
 
   $(document).ready(function(){
@@ -52,6 +54,25 @@
           }
       }]
   });
+  $('.upcoming-events').slick({
+    slidesToShow: 3,
+    infinite: false,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    dots: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 2
+        }
+    },{
+      breakpoint: 576,
+      settings: {
+          slidesToShow: 1
+      }
+  }]
+});
 });
 
 
@@ -61,9 +82,15 @@
     offset: 75
   });
 
-  $(document).ready(function(){
+ $(document).ready(function(){
     $('#nav-icon').click(function(){
-      $(this).toggleClass('open');
+      if ($('#navbarResponsive').hasClass('show','collapsing')){
+        $(this).removeClass('open');
+      }
+      else{
+        $(this).addClass('open');
+
+      }
       });
   });
 
@@ -80,6 +107,7 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
 
   // Magnific popup calls
 
