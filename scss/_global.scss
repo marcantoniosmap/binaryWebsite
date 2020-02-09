@@ -34,12 +34,18 @@ hr.light {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.25rem;
+  padding: 1rem 2rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  @include media-breakpoint-up(md){
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+ 
 }
 
 // Page section padding
@@ -58,8 +64,30 @@ hr.light {
   }
 }
 
+.register-form{
+  input:not([type]), input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+      height: 48px;
+      max-width: 100%;
+      padding: 0px 16px;
+      border: 1px solid #f1f1f1;
+      background: #fff;
+      transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .25s;
+      border-radius: 5px;
+      width: 100%;
+      position: relative;
+      color: gray;
+      margin-top: 16px;
+  }
+}
+
 //alumni section
 
+h2{
+  &.sofia-text{
+    font-family: 'Princess Sofia', cursive !important;
+    font-size: 3rem;
+  }
+}
 .bg-alumni-primary{
   color: $alumni-secondary;
   background-color: $alumni-primary;
@@ -77,11 +105,16 @@ hr.light {
   }
 }
 
+.border-right-alumni{
+  border-right: none;
+  @include media-breakpoint-up(lg){
+    border-right: .5rem solid $alumni-primary;
+
+  }
+}
+
 .blob-white{
-  background-image: url('../img/alumni-night/blob.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: none;;
   @include media-breakpoint-up(lg){
     
     background-position: top;
@@ -103,16 +136,27 @@ hr.light {
   }
   
 }
-.border-right-alumni{
-  border-right: none;
-  @include media-breakpoint-up(lg){
-    border-right: .5rem solid $alumni-primary;
 
-  }
-}
 .events-card{
-
   .card{
+    overflow: hidden;
+    height: 20rem;
+    border: none;
+    color:$alumni-secondary;
+    &#presentation{
+      background-image: url('../img/alumni-night/events/presentation.jpg');
+      }
+    &#sharing{
+      background-image: url('../img/alumni-night/events/sharing.jpg');
+
+    }
+    &#networking{
+      background-image: url('../img/alumni-night/events/dinner.jpg');
+
+    } background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;;
     .overlay{
       position: absolute;
       top:0;
@@ -123,25 +167,8 @@ hr.light {
       width: 100%;
       background-color: rgba($color: #042a33, $alpha: 0.4);
     }
-    overflow: hidden;
-    height: 20rem;
-    border: none;
-    color:$alumni-secondary;
-    &:nth-child(1){
-      background-image: url('../img/alumni-night/events/presentation.jpg');
-      }
-    &:nth-child(2){
-      background-image: url('../img/alumni-night/events/sharing.jpg');
-
-    }
-    &:nth-child(3){
-      background-image: url('../img/alumni-night/events/dinner.jpg');
-
-    }
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;;
+    
+   
 
     .text-overlay{
       position: absolute;
@@ -151,10 +178,7 @@ hr.light {
       width: 100%;
       color:white;
       h3{
-        font-size: 90%;
-        @include media-breakpoint-up(lg){
-          font-size: 28px;
-        }
+        font-size: 2rem;
       }
       
     }

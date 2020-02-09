@@ -47,6 +47,7 @@
     }
   }
 }
+
 /* Slider */
 .slick-slide {
 	img {
@@ -153,4 +154,46 @@
 }
 .slick-arrow.slick-hidden {
 	display: none;
+}
+
+
+/* TIMER COUNTDOWN */
+#timer{
+	padding:0 4rem 1rem 4rem;
+	@include media-breakpoint-up(lg) {
+		padding:0 3rem 1rem 3rem;
+	}
+	div {
+		display: inline-block;
+		line-height: 1;
+		padding: 10px;
+		font-size: 3rem;
+		@include media-breakpoint-up(lg) {
+			padding: 20px;
+			font-size: 4rem;
+	  }
+	}
+	span {
+		padding-top: 0.5rem;
+		display: block;
+		font-size: 0.75rem;
+		color: white;
+		@include media-breakpoint-up(lg) {
+			font-size: 1rem;
+	  }
+	}
+	  
+	#days {
+		color:#bcac4c;
+	}
+	#hours {
+		color:$alumni-primary;
+	}
+	#minutes {
+		color: #d6c666;
+	}
+	#seconds {
+		color:#dfd388;
+	}
+	
 }

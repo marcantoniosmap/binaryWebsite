@@ -9590,12 +9590,20 @@ hr.light {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.25rem;
+  padding: 1rem 2rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+}
+
+@media (min-width: 768px) {
+  .btn-xl {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
 }
 
 .page-section {
@@ -9609,6 +9617,25 @@ hr.light {
 
 #my-form button {
   padding: 1.25rem 2rem;
+}
+
+.register-form input:not([type]), .register-form input[type=color], .register-form input[type=date], .register-form input[type=datetime-local], .register-form input[type=datetime], .register-form input[type=email], .register-form input[type=month], .register-form input[type=number], .register-form input[type=password], .register-form input[type=search], .register-form input[type=tel], .register-form input[type=text], .register-form input[type=time], .register-form input[type=url], .register-form input[type=week], .register-form select, .register-form textarea {
+  height: 48px;
+  max-width: 100%;
+  padding: 0px 16px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  color: gray;
+  margin-top: 16px;
+}
+
+h2.sofia-text {
+  font-family: 'Princess Sofia', cursive !important;
+  font-size: 3rem;
 }
 
 .bg-alumni-primary {
@@ -9631,11 +9658,18 @@ hr.light {
   }
 }
 
+.border-right-alumni {
+  border-right: none;
+}
+
+@media (min-width: 992px) {
+  .border-right-alumni {
+    border-right: 0.5rem solid #D1BF54;
+  }
+}
+
 .blob-white {
-  background-image: url("../img/alumni-night/blob.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: none;
 }
 
 @media (min-width: 992px) {
@@ -9660,16 +9694,6 @@ hr.light {
   color: #D1BF54;
 }
 
-.border-right-alumni {
-  border-right: none;
-}
-
-@media (min-width: 992px) {
-  .border-right-alumni {
-    border-right: 0.5rem solid #D1BF54;
-  }
-}
-
 .events-card .card {
   overflow: hidden;
   height: 20rem;
@@ -9679,6 +9703,18 @@ hr.light {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.events-card .card#presentation {
+  background-image: url("../img/alumni-night/events/presentation.jpg");
+}
+
+.events-card .card#sharing {
+  background-image: url("../img/alumni-night/events/sharing.jpg");
+}
+
+.events-card .card#networking {
+  background-image: url("../img/alumni-night/events/dinner.jpg");
 }
 
 .events-card .card .overlay {
@@ -9692,18 +9728,6 @@ hr.light {
   background-color: rgba(4, 42, 51, 0.4);
 }
 
-.events-card .card:nth-child(1) {
-  background-image: url("../img/alumni-night/events/presentation.jpg");
-}
-
-.events-card .card:nth-child(2) {
-  background-image: url("../img/alumni-night/events/sharing.jpg");
-}
-
-.events-card .card:nth-child(3) {
-  background-image: url("../img/alumni-night/events/dinner.jpg");
-}
-
 .events-card .card .text-overlay {
   position: absolute;
   bottom: 0;
@@ -9714,13 +9738,7 @@ hr.light {
 }
 
 .events-card .card .text-overlay h3 {
-  font-size: 90%;
-}
-
-@media (min-width: 992px) {
-  .events-card .card .text-overlay h3 {
-    font-size: 28px;
-  }
+  font-size: 2rem;
 }
 
 #mainNav {
@@ -10059,4 +10077,58 @@ header.masthead h1 {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+/* TIMER COUNTDOWN */
+#timer {
+  padding: 0 4rem 1rem 4rem;
+}
+
+@media (min-width: 992px) {
+  #timer {
+    padding: 0 3rem 1rem 3rem;
+  }
+}
+
+#timer div {
+  display: inline-block;
+  line-height: 1;
+  padding: 10px;
+  font-size: 3rem;
+}
+
+@media (min-width: 992px) {
+  #timer div {
+    padding: 20px;
+    font-size: 4rem;
+  }
+}
+
+#timer span {
+  padding-top: 0.5rem;
+  display: block;
+  font-size: 0.75rem;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  #timer span {
+    font-size: 1rem;
+  }
+}
+
+#timer #days {
+  color: #bcac4c;
+}
+
+#timer #hours {
+  color: #D1BF54;
+}
+
+#timer #minutes {
+  color: #d6c666;
+}
+
+#timer #seconds {
+  color: #dfd388;
 }
