@@ -16,16 +16,14 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Princess+Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Princess+Sofia&display=swap" rel="stylesheet">
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 
   <style>
   </style>
@@ -37,7 +35,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo/BINARY Logo Flat.png" width=40 alt="LOGO">
+        <img src="img/logo/binary.svg" width=40 onerror="this.onerror=null; this.src='img/logo/alumniNightTransparant.png'">
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <div id="nav-icon">
@@ -49,28 +47,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#">Services</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbar-drop" data-toggle="dropdown">Events</a>
-            <div class="dropdown-menu">
-              <a href="alumni-night.html" class="dropdown-item">Alumni Night</a>
-              <a href="" class="dropdown-item">Leadership Camp</a>
-              <a href="" class="dropdown-item">Hackathon</a>
-              <a href="" class="dropdown-item">Competitive Programming</a> 
-              <a href="" class="dropdown-item">Seminary</a> 
-              <a href="" class="dropdown-item">Robogals</a> 
-              <a href="" class="dropdown-item">Phootsal</a> 
-              <a href="" class="dropdown-item">Capture the flag</a> 
-              <a href="" class="dropdown-item">Study Session with Binary</a> 
-              <a href="" class="dropdown-item">Wombat</a> 
-            </div>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#detail">Detail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#register">Register</a>
           </li>
         </ul>
       </div>
@@ -81,7 +67,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <img src="img/logo/alumniNightTransparant.png" class="img-fluid" alt="">
+          <img src="img/logo/alumni-night.svg" onerror="this.onerror=null; this.src='img/logo/alumniNightTransparant.png'">
         </div>
         
         <div class="col-lg-8 align-self-baseline">
@@ -174,7 +160,7 @@
   </section>
 
   <!-- Services Section -->
-  <section class="page-section" id="services">
+  <section class="page-section" id="detail">
     <div class="container">
 
      
@@ -289,7 +275,7 @@
   <!-- Call to Action Section -->
   <section class="page-section bg-alumni-secondary text-white" id="register">
     <div class="container">
-      <h2 class="mb-5 text-center">Register <span class="text-alumni-primary">Yourself</span> to join</h2>
+      <h2 class="mb-5 text-center sofia-text">Register <span class="text-alumni-primary">Yourself</span> to join</h2>
       <form id="alumni-night-regis"class="register-form">
         <div class="form-row ">
           <div class="form-group col-md-6">
@@ -304,8 +290,8 @@
           <input type="email" id="inputAddress" placeholder="Email address">
         </div>
           <div class="form-group">
-            <select id="inputState">
-              <option selected>I was in batch...</option>
+            <select id="selectBatch">
+              <option selected>I'm Binusian batch..</option>
               <option>19</option>
               <option>18</option>
               <option>17</option>

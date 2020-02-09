@@ -9636,6 +9636,7 @@ hr.light {
 h2.sofia-text {
   font-family: 'Princess Sofia', cursive !important;
   font-size: 3rem;
+  line-height: 4rem;
 }
 
 .bg-alumni-primary {
@@ -9679,10 +9680,6 @@ h2.sofia-text {
     background-attachment: scroll;
     background-size: contain;
   }
-}
-
-#event-detail {
-  width: 100%;
 }
 
 #event-detail td {
@@ -9738,7 +9735,13 @@ h2.sofia-text {
 }
 
 .events-card .card .text-overlay h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .events-card .card .text-overlay h3 {
+    font-size: 2rem;
+  }
 }
 
 #mainNav {
@@ -10081,7 +10084,7 @@ header.masthead h1 {
 
 /* TIMER COUNTDOWN */
 #timer {
-  padding: 0 4rem 1rem 4rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 @media (min-width: 992px) {
@@ -10094,7 +10097,7 @@ header.masthead h1 {
   display: inline-block;
   line-height: 1;
   padding: 10px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 992px) {
